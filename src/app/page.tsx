@@ -150,7 +150,7 @@ export default function Home() {
         {/* ... other main content elements ... */}
         <div className="w-full flex justify-center items-center my-4 md:mt-15 text-center font-bold relative px-4 md:px-0">
           <BlurText
-            text="Jofanza Denis Aldida"
+            text="Jofanza Denis Aldida (Jay)"
             delay={150}
             animateBy="letters"
             direction="top"
@@ -277,8 +277,8 @@ export default function Home() {
                 showTooltip={false}
                 displayOverlayContent={true}
                 overlayContent={
-                  <p className="bg-transparent px-4 py-2 border-1 border-dashed rounded-lg opacity-50 font-bold m-5 absolute top-5 left-85">
-                    Lauvigne
+                  <p className="bg-transparent px-4 py-2 border-1 border-dashed rounded-lg opacity-50 font-bold m-5 absolute top-5 left-95">
+                    Jay
                   </p>
                 }
               />
@@ -300,7 +300,7 @@ export default function Home() {
                 displayOverlayContent={true}
                 overlayContent={
                   <p className="bg-transparent px-4 py-2 border-1 border-dashed rounded-lg opacity-50 font-bold m-5 absolute">
-                    Lauvigne
+                    Jay
                   </p>
                 }
               />
@@ -348,7 +348,7 @@ export default function Home() {
 
       {/* Footer Section - Consider moving this to layout.tsx as well for consistency */}
       <footer className="flex w-full items-center justify-center p-4 border-t border-white/[.15] text-white/50 text-sm font-light mt-20"> {/* Added margin top */}
-        <p>&copy; {new Date().getFullYear()} Lauvigne Lumeda. All rights reserved.</p> {/* Updated name */}
+        <p>&copy; {new Date().getFullYear()} Jofanza Denis Aldida. All rights reserved.</p> {/* Updated name */}
       </footer>
     </> // Closed React Fragment wrapper
     // </div> // Removed this closing tag

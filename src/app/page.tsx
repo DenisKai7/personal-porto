@@ -264,7 +264,7 @@ export default function Home() {
 
             <div className="hidden md:block mt-10 mb-20">
               <TiltedCard
-                imageSrc="/photos/tiltedcard.svg"
+                imageSrc="/photos/Me.png"
                 altText="Yuyuhiei"
                 captionText="Lauvigne Lumeda" 
                 containerHeight="600px"

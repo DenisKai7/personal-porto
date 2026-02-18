@@ -112,12 +112,14 @@ const handleAnimationComplete = () => {
 
 // Define your skill arrays (you could also move these to a data file if they get long)
 const devSkills = [
-  'Next.js', 'Tailwind', 'React', 'Javascript', 'CSS', 'Node.js',
-  'Python', 'Springboot', 'Flutterflow', 'Firebase', 'Supabase', 'MySQL'
+  'Tensorflow', 'Pytorch', 'Scikit-learn', 'OpenCV', 'YOLO', 'Pandas', 'Numpy', 'OCR', 'NLP', 'Computer Vision', 'Agentic AI', 'LLM', 'SLM',
+  'Figma', 'Next.js', 'Tailwind', 'React', 'CSS', 'Flutter', 'Expo', 
 ];
 
 const contentSkills = [
-  'Figma', 'Canva', 'Capcut', 'Adobe Premiere Pro', 'Adobe Illustrator'
+  'Python', 'Javascript', 'Typescript', 'PHP', 'Dart',
+  'Django', 'Flask', 'FastAPI', 'Node.js', 'Express.js', 'Laravel',
+  'Docker', 'Git', 'Google Cloud Platform', 'Postman', 'MySQL', 'PostgreSQL', 'Oracle',
 ];
 
 export default function Home() {
@@ -211,10 +213,10 @@ export default function Home() {
              {/* hover:scale-105 on the card wrapper is kept */}
              <div className="relative p-6 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 custom-corner-border">
                <h3 className="text-white font-bold md:text-2xl text-lg tracking-wide mb-3">
-                 DEVELOP
+                 PROFILE
                </h3>
                <p className="text-gray-400 md:text-md text-sm mt-2 leading-relaxed mb-5">
-                 Started creating mobile applications using Flutter, FlutterFlow, and Firebase and eventually switched to Web Development using NextJS, React, and Tailwind
+                 AI & Software Engineer | Technical Speaker<br/>Results-driven Engineer specializing in the design, development, and deployment of scalable intelligent systems. Expert at bridging machine learning with robust software architecture to drive business efficiency and data-informed decision-making. A proactive technical speaker dedicated to demystifying AI and emerging technologies for diverse audiences through clear, impactful storytelling.
                </p>
                <h4 className="text-cyan-300 font-semibold mb-3 text-base">
                  Skillset &amp; tools
@@ -231,13 +233,13 @@ export default function Home() {
              {/* hover:scale-105 on the card wrapper is kept */}
              <div className="relative p-6 rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 custom-corner-border">
                <h3 className="text-white font-bold md:text-2xl text:lg tracking-wide mb-3">
-                 CREATE {/* Updated title based on your code */}
+                 ABOUT ME {/* Updated title based on your code */}
                </h3>
                <p className="text-gray-400 md:text-md text-sm mt-2 leading-relaxed mb-5">
-                   My content creation journey evolved from a side hustle to serving other creators, achieving an average reach of 15 million within 90 days. {/* Updated description */}
+                   My experience ranges from building Computer Vision systems (YOLOv8, OCR) to developing full-stack web applications and deploying AI models using Flask/FastAPI. I am also a Google Student Ambassador, actively sharing knowledge about Gemini AI and AI technology. {/* Updated description */}
                </p>
                <h4 className="text-cyan-300 font-semibold mb-3 text-base">
-                 Skillset &amp; Tools
+                 Languages &amp; Backend
                </h4>
                <div className="flex flex-wrap gap-2">
                  {contentSkills.map(skill => (

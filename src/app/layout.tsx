@@ -24,9 +24,9 @@ const items = [
 
 // Define social media links and placeholder icon paths
 const socialLinks = [
-  { platform: "GitHub", href: "https://github.com/DenisKai7", iconPath: "/icons/github_icon.svg" }, // <-- Replace YOUR_GITHUB_LINK and icon path
-  { platform: "LinkedIn", href: "https://www.linkedin.com/in/jofanza-denis-aldida/", iconPath: "/icons/linkedin_icon.svg" }, // <-- Replace YOUR_LINKEDIN_LINK and icon path
-  { platform: "Gmail", href: "mailto:aldidajofanzadenis@gmail.com", iconPath: "/icons/gmail_icon.svg" }, // <-- Replace YOUR_EMAIL_ADDRESS and icon path
+  { platform: "GitHub", href: "https://github.com/DenisKai7", iconPath: "/icons/github_icon.svg" }, 
+  { platform: "LinkedIn", href: "https://www.linkedin.com/in/jofanza-denis-aldida/", iconPath: "/icons/linkedin_icon.svg" }, 
+  { platform: "Gmail", href: "mailto:aldidajofanzadenis@gmail.com", iconPath: "/icons/gmail_icon.svg" }, 
 ];
 
 

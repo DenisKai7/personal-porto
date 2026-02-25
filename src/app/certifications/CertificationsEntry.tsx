@@ -10,18 +10,22 @@ interface CertificationsEntryProps {
   description: string;
   imageSrc?: string; // Optional project image source
   projectLink?: string; // Optional link for the project image
-  trophyType: 'first' | 'second' | 'third' | 'special' | 'participant' | string; // Specify trophy type
+  certificationsType: 'first' | 'second' | 'third' | 'fourth' | 'fifth' | 'sixth' | 'seventh' | 'eighth' | 'tenth' | string;
   techStackIcons?: string[]; // Optional array of paths to tech stack icons
 }
 
-// Mapping of trophy types to image paths
-const trophyImagePaths: Record<string, string> = {
+// Mapping of certifications types to image paths
+const certificationsImagePaths: Record<string, string> = {
   first: '/certifications/gold_trophy.png', 
   second: '/certifications/silver_trophy.png', 
   third: '/certifications/bronze_trophy.png', 
-  special: '/certifications/special_trophy.png', 
-  participant: '/certifications/participant_trophy.png', 
-  // Add more mappings here if you have different trophy types
+  fourth: '/certifications/special_trophy.png', 
+  fifth: '/certifications/participant_trophy.png', 
+  sixth: '/certifications/asdos pbo 1.jpg',
+  seventh: '/certifications/Sertifikat Asdos Genap 2023-2024_3 Jofanza Denis Aldida_page-0001.jpg',
+  eighth: '/certifications/Sertifikat Asdos Genap 2023-2024_2 Jofanza Denis Aldida_page-0001.jpg',
+  tenth: '/certifications/Asdos Algoritma Pemrograman 1.jpeg',
+  // Add more mappings here if you have different certifications types
 };
 
 const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
@@ -31,11 +35,11 @@ const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
   description,
   imageSrc,
   projectLink, // Destructure projectLink
-  trophyType,
+  certificationsType,
   techStackIcons, // Destructure techStackIcons
 }) => {
-  // Get the correct image path based on trophyType from the mapping
-  const trophyImagePath = trophyImagePaths[trophyType];
+  // Get the correct image path based on certificationsType from the mapping
+  const certificationsImagePath = certificationsImagePaths[certificationsType];
 
   return (
     // Main container: flex-col on mobile, flex-row on medium screens and up
@@ -85,14 +89,14 @@ const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
 
         {/* Text Content - Contains the award, title, and description */}
         <div className="flex-1">
-          {/* Award Section - Displays the trophy icon and the award text */}
+          {/* Award Section - Displays the certifications icon and the award text */}
           <div className="flex items-center text-white/80 text-sm mb-2">
-            {/* Trophy Image - Renders the appropriate trophy PNG based on trophyType */}
-            {trophyImagePath && ( // Render image only if a path is found
+            {/* Certifications Image - Renders the appropriate certifications PNG based on certificationsType */}
+            {certificationsImagePath && ( // Render image only if a path is found
                 <Image
-                src={trophyImagePath} // Use the path from the mapping
-                alt={`${award} Trophy`}
-                className="w-4 h-4 sm:w-5 sm:h-5 mr-1 object-contain" // Adjusted trophy size responsively
+                src={certificationsImagePath} // Use the path from the mapping
+                alt={`${award} Certifications`}
+                className="w-4 h-4 sm:w-5 sm:h-5 mr-1 object-contain" // Adjusted certifications size responsively
                 width={20} // Add appropriate width and height for Image component
                 height={20}
               />

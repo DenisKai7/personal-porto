@@ -1,9 +1,9 @@
-// components/HackathonEntry.tsx
+// components/CertificationsEntry.tsx
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link'; // Import Link
 
-interface HackathonEntryProps {
+interface CertificationsEntryProps {
   entryNumber: string;
   title: string;
   award: string;
@@ -24,7 +24,7 @@ const trophyImagePaths: Record<string, string> = {
   // Add more mappings here if you have different trophy types
 };
 
-const HackathonEntry: React.FC<HackathonEntryProps> = ({
+const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
   entryNumber,
   title,
   award,
@@ -41,7 +41,7 @@ const HackathonEntry: React.FC<HackathonEntryProps> = ({
     // Main container: flex-col on mobile, flex-row on medium screens and up
     // Added responsive padding: smaller on mobile, larger on medium+
     <div className="flex flex-col md:flex-row items-start w-full border-b border-white/[.15] py-6 md:py-10 last:border-b-0">
-      {/* Entry Number - Displays the sequential number for the hackathon entry */}
+      {/* Entry Number - Displays the sequential number for the certifications entry */}
       {/* Adjusted text size for different breakpoints */}
       {/* Adjusted margin for different breakpoints */}
       <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold mr-0 md:mr-8 mb-4 md:mb-0 flex-shrink-0 w-full md:w-auto text-center md:text-left">
@@ -101,7 +101,7 @@ const HackathonEntry: React.FC<HackathonEntryProps> = ({
             <span>{award}</span>
           </div>
 
-          {/* Title - Displays the title of the hackathon entry */}
+          {/* Title - Displays the title of the certifications entry */}
           {/* Adjusted text size for different breakpoints */}
           <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-4">{title}</h3>
 
@@ -122,7 +122,7 @@ const HackathonEntry: React.FC<HackathonEntryProps> = ({
           )}
 
 
-          {/* Description - Displays the description of the hackathon entry */}
+          {/* Description - Displays the description of the certifications entry */}
           {/* Adjusted text size for different breakpoints */}
           <p className="text-sm sm:text-base text-white/70 leading-relaxed">
             {description}
@@ -133,4 +133,4 @@ const HackathonEntry: React.FC<HackathonEntryProps> = ({
   );
 };
 
-export default HackathonEntry;
+export default CertificationsEntry;

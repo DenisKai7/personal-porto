@@ -15,10 +15,11 @@ import {
 const IMGS: string[] = [
     "/certifications/Coursera P724RBL6SNE4_page-0001.jpg",
     "/certifications/Coursera ZUHKBCL4MYYH_page-0001.jpg",
+    "/certifications/Coursera WJ55943O2OCG_page-0001.jpg",
+    "/certifications/[Bangkit 2024 Batch 2] Certificate - M463B4KY2079_page-0001.jpg",
+    "/certifications/Coursera L33S7FDEQS8Y_page-0001.jpg",
+    "/certifications/Jofanza Denis Aldida_GSA_page-0001.jpg",
     "/certifications/asdos pbo 1.jpg",
-    "/certifications/Asdos Algoritma Pemrograman 1.jpeg",
-    "/certifications/Sertifikat Asdos Genap 2023-2024_2 Jofanza Denis Aldida_page-0001.jpg",
-    "/certifications/Sertifikat Asdos Genap 2023-2024_3 Jofanza Denis Aldida_page-0001.jpg",
 ];
 
 interface RollingGalleryProps {
@@ -54,7 +55,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
     // 3D geometry calculations
     const cylinderWidth: number = isScreenSizeSm ? 1100 : 1800;
     const faceWidth: number = (cylinderWidth / faceCount) * 1.5;
-    const radius: number = cylinderWidth / (2 * Math.PI);
+    const radius: number = cylinderWidth / (1.5 * Math.PI);
 
     // Framer Motion values and controls
     const dragFactor: number = 0.05;

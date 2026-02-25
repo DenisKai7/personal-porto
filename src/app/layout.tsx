@@ -19,7 +19,7 @@ import { gilroy } from "@/fonts/fonts";
 const items = [
   { label: "Home", href: "/" },
   { label: "Certifications", href: "/certifications" },
-  { label: "Contact", href: "/Contact" }, // Adjust as needed
+  { label: "More", href: "/More" }, // Adjust as needed
 ];
 
 // Define social media links and placeholder icon paths

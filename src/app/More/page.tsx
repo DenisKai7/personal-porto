@@ -1,4 +1,4 @@
-// src/app/Contact.tsx
+// src/app/More.tsx
 
 'use client'; // This page uses client-side interactivity (form, potential animations)
 
@@ -15,13 +15,13 @@ const socialLinks = [
     { platform: "Gmail", href: "mailto:lumedalauvigne@gmail.com", iconPath: "/icons/gmail_icon.svg" }, // <-- Replace YOUR_EMAIL_ADDRESS and icon path
 ];
 
-// Define contact information
-const contactInfo = {
+// Define More information
+const MoreInfo = {
     email: "lumedalauvigne@gmail.com",
 };
 
 
-export default function Contact() {
+export default function More() {
   // Updated form submission handler to open mail client with mailto link
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -43,7 +43,7 @@ export default function Contact() {
     const encodedBody = encodeURIComponent(emailBody);
 
     // Construct the mailto link
-    const mailtoLink = `mailto:${contactInfo.email}?subject=${encodedSubject}&body=${encodedBody}`;
+    const mailtoLink = `mailto:${MoreInfo.email}?subject=${encodedSubject}&body=${encodedBody}`;
 
     // Open the default email client
     window.location.href = mailtoLink;
@@ -66,31 +66,31 @@ export default function Contact() {
         />
       </div>
 
-      {/* Contact Content Container */}
+      {/* More Content Container */}
       <div className="w-full max-w-md md:max-w-3xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
-        {/* Contact Information Section */}
+        {/* More Information Section */}
         <div className="flex flex-col space-y-6">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Contact Information</h2>
-          {contactInfo.email && (
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">More Information</h2>
+          {MoreInfo.email && (
             <div className="flex items-center text-white/80">
               {/* You can add an icon here, e.g., a mail icon SVG or Image */}
               <span className="mr-2 text-cyan-500">📧</span> {/* Example icon */}
-              <a href={`mailto:${contactInfo.email}`} className="hover:underline text-base sm:text-lg">{contactInfo.email}</a>
+              <a href={`mailto:${MoreInfo.email}`} className="hover:underline text-base sm:text-lg">{MoreInfo.email}</a>
             </div>
           )}
-          {/* Add phone and location here if included in contactInfo */}
+          {/* Add phone and location here if included in MoreInfo */}
           {/*
-          {contactInfo.phone && (
+          {MoreInfo.phone && (
             <div className="flex items-center text-white/80">
               <span className="mr-2 text-cyan-500">📞</span>
-              <a href={`tel:${contactInfo.phone}`} className="hover:underline text-base sm:text-lg">{contactInfo.phone}</a>
+              <a href={`tel:${MoreInfo.phone}`} className="hover:underline text-base sm:text-lg">{MoreInfo.phone}</a>
             </div>
           )}
-          {contactInfo.location && (
+          {MoreInfo.location && (
             <div className="flex items-center text-white/80">
               <span className="mr-2 text-cyan-500">📍</span>
-              <span className="text-base sm:text-lg">{contactInfo.location}</span>
+              <span className="text-base sm:text-lg">{MoreInfo.location}</span>
             </div>
           )}
           */}
@@ -120,7 +120,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Contact Form Section */}
+        {/* More Form Section */}
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Send a Message</h2>
           <form onSubmit={handleSubmit} className="flex flex-col space-y-4">

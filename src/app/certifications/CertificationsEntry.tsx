@@ -16,11 +16,11 @@ interface CertificationsEntryProps {
 
 // Mapping of trophy types to image paths
 const trophyImagePaths: Record<string, string> = {
-  first: '/trophies/gold_trophy.png', // <-- Replace with actual paths relative to your public directory
-  second: '/trophies/silver_trophy.png', // <-- Replace with actual paths
-  third: '/trophies/bronze_trophy.png', // <-- Replace with actual paths
-  special: '/trophies/special_trophy.png', // <-- Replace with actual paths
-  participant: '/trophies/participant_trophy.png', // <-- Replace with actual paths
+  first: '/certifications/gold_trophy.png', 
+  second: '/certifications/silver_trophy.png', 
+  third: '/certifications/bronze_trophy.png', 
+  special: '/certifications/special_trophy.png', 
+  participant: '/certifications/participant_trophy.png', 
   // Add more mappings here if you have different trophy types
 };
 

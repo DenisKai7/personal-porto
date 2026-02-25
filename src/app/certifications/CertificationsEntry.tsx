@@ -16,8 +16,8 @@ interface CertificationsEntryProps {
 
 // Mapping of certifications types to image paths
 const certificationsImagePaths: Record<string, string> = {
-  first: '/certifications/gold_trophy.png', 
-  second: '/certifications/silver_trophy.png', 
+  first: '/certifications/Coursera P724RBL6SNE4_page-0001.jpg', 
+  second: '/certifications/Coursera ZUHKBCL4MYYH_page-0001.jpg', 
   third: '/certifications/bronze_trophy.png', 
   fourth: '/certifications/special_trophy.png', 
   fifth: '/certifications/participant_trophy.png', 

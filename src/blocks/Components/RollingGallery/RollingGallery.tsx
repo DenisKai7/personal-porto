@@ -13,12 +13,12 @@ import {
 } from "framer-motion";
 
 const IMGS: string[] = [
-    "/hackathons/ffdg.JPG",
-    "/hackathons/ideathon.jpg",
-    "/hackathons/inno2024.JPG",
-    "/hackathons/innolympics.JPG",
-    "/hackathons/kmc.JPG",
-    "/hackathons/springlabs.JPG",
+    "/certifications/Coursera P724RBL6SNE4_page-0001.jpg",
+    "/certifications/Coursera ZUHKBCL4MYYH_page-0001.jpg",
+    "/certifications/asdos pbo 1.jpg",
+    "/certifications/Asdos Algoritma Pemrograman 1.jpeg",
+    "/certifications/Sertifikat Asdos Genap 2023-2024_2 Jofanza Denis Aldida_page-0001.jpg",
+    "/certifications/Sertifikat Asdos Genap 2023-2024_3 Jofanza Denis Aldida_page-0001.jpg",
 ];
 
 interface RollingGalleryProps {

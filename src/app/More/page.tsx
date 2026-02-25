@@ -7,50 +7,30 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BlurText from '@/blocks/TextAnimations/BlurText/BlurText'; 
 import Squares from '@/blocks/Backgrounds/Squares/Squares';
+import RollingGallery from '@/blocks/Components/RollingGallery/RollingGallery';
 
 // Define social media links (can reuse from layout or define here)
 const socialLinks = [
-    { platform: "GitHub", href: "https://github.com/Yuyuhiei", iconPath: "/icons/github_icon.svg" }, // <-- Replace YOUR_GITHUB_LINK and icon path
-    { platform: "LinkedIn", href: "https://www.linkedin.com/in/lauvigne-lumeda/", iconPath: "/icons/linkedin_icon.svg" }, // <-- Replace YOUR_LINKEDIN_LINK and icon path
-    { platform: "Gmail", href: "mailto:lumedalauvigne@gmail.com", iconPath: "/icons/gmail_icon.svg" }, // <-- Replace YOUR_EMAIL_ADDRESS and icon path
+    { platform: "GitHub", href: "https://github.com/DenisKai7", iconPath: "/icons/github_icon.svg" }, 
+    { platform: "LinkedIn", href: "https://www.linkedin.com/in/jofanza-denis-aldida/", iconPath: "/icons/linkedin_icon.svg" }, 
+    { platform: "Gmail", href: "mailto:aldidajofanzadenis@gmail.com", iconPath: "/icons/gmail_icon.svg" }, 
 ];
 
 // Define More information
 const MoreInfo = {
-    email: "lumedalauvigne@gmail.com",
+    email: "aldidajofanzadenis@gmail.com",
 };
 
 
 export default function More() {
-  // Updated form submission handler to open mail client with mailto link
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const form = event.currentTarget;
-    const formData = new FormData(form);
-
-    // Get form values
-    const name = formData.get('name')?.toString() || '';
-    const email = formData.get('email')?.toString() || '';
-    const subject = formData.get('subject')?.toString() || '';
-    const message = formData.get('message')?.toString() || '';
-
-    // Construct the email body
-    const emailBody = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-
-    // Encode subject and body for the mailto link
-    const encodedSubject = encodeURIComponent(subject);
-    const encodedBody = encodeURIComponent(emailBody);
-
-    // Construct the mailto link
-    const mailtoLink = `mailto:${MoreInfo.email}?subject=${encodedSubject}&body=${encodedBody}`;
-
-    // Open the default email client
-    window.location.href = mailtoLink;
-
-    // Optional: You might want to reset the form after opening the mail client
-    // form.reset();
-  };
+  // Dokumentasi kegiatan pribadi
+  const activityImages = [
+    "/activity/activity1.jpg",
+    "/activity/activity2.jpg",
+    "/activity/activity3.jpg",
+    "/activity/activity4.jpg",
+    "/activity/activity5.jpg",
+  ];
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -120,56 +100,10 @@ export default function More() {
           </div>
         </div>
 
-        {/* More Form Section */}
+        {/* Documentation Gallery Section */}
         <div>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Send a Message</h2>
-          <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-white/80 text-sm font-medium mb-1">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-white/80 text-sm font-medium mb-1">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="subject" className="block text-white/80 text-sm font-medium mb-1">Subject</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                className="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-white/80 text-sm font-medium mb-1">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="w-full px-3 py-2 bg-[#1a1b1c] border border-white/[.15] rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500 text-white"
-                required
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full px-4 py-2 bg-cyan-600 text-white font-bold rounded-md hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-black transition duration-200"
-            >
-              Send Message
-            </button>
-          </form>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Activity Documentation</h2>
+          <RollingGallery images={activityImages} autoplay={true} pauseOnHover={true} />
         </div>
 
       </div>

@@ -1,4 +1,4 @@
-// src/app/Hackathons.tsx
+// src/app/certifications/page.tsx
 
 "use client";
  
@@ -7,14 +7,14 @@ import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
 import RollingGallery from "@/blocks/Components/RollingGallery/RollingGallery";
 import FallingText from "@/blocks/TextAnimations/FallingText/FallingText";
 import Threads from "@/blocks/Backgrounds/Threads/Threads";
-import HackathonEntry from "./CertificationsEntry";
+import CertificationsEntry from "./CertificationsEntry";
 
 const handleAnimationComplete = () => {
-  console.log('Hackathon page animation completed!');
+  console.log('Certifications page animation completed!');
 };
 
-// Define your hackathon entry data
-const hackathonEntriesData = [
+// Define your certification entry data
+const certificationsEntriesData = [
   {
     entryNumber: "01",
     title: "Procrash",
@@ -84,10 +84,10 @@ const hackathonEntriesData = [
   }
 ];
 
-export default function Hackathons() {
+export default function Certifications() {
   return (
     <>
-      {/* Main content area for Hackathons */}
+      {/* Main content area for Certifications */}
       <main className="flex-grow flex flex-col items-center h-full relative pt-20">
       { /* Make this hidden on mobile */ }
       {/* Added responsive hidden class */}
@@ -99,10 +99,10 @@ export default function Hackathons() {
           />
         </div>
 
-        {/* Hackathon Entries Section */}
+        {/* Certifications Entries Section */}
         <div className="flex w-full items-center justify-center p-4">
           <BlurText
-            text="Hackathon Entries"
+            text="Certifications"
             delay={50}
             animateBy="letters"
             direction="top"
@@ -145,11 +145,11 @@ export default function Hackathons() {
           </div>
 
 
-          {/* Render Hackathon Entries */}
+          {/* Render Certifications Entries */}
           {/* Adjusted margin top for responsiveness */}
           <div className="mt-20 md:mt-40"> {/* Adjusted margin top */}
-            {hackathonEntriesData.map((entry, index) => (
-              <HackathonEntry
+            {certificationsEntriesData.map((entry, index) => (
+              <CertificationsEntry
                 key={index}
                 entryNumber={entry.entryNumber}
                 title={entry.title}

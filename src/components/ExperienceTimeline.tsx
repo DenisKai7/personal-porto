@@ -47,7 +47,7 @@ const experiences = [
     company: 'University of PGRI Madiun',
     year: '2023-2025',
     description: `Possess a solid academic foundation in core computer science principles, including advanced Algorithms and Programming (I & II) and Database Management. Expert in Object-Oriented Programming (OOP) methodologies, providing a rigorous technical base for building structured, efficient, and scalable software solutions.`,
-    logo: '/exp_logos/Unipma.png',
+    logo: '/exp_logos/Unipma1.png',
   },
   
 ];

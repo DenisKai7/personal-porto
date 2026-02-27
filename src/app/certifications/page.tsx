@@ -95,13 +95,13 @@ const certificationsEntriesData = [
   },
   {
     entryNumber: "07",
-    title: "Machine Learning",
-    award: "Stanford University",
-    description: "Successfully completed a comprehensive 3-course specialization taught by Andrew Ng. This certification validates my practical skills in applying modern machine learning concepts, including supervised and unsupervised learning, to solve real-world problems.",
-    imageSrc: '/certifications/Coursera WJ55943O2OCG_page-0001.jpg', // Replace with the actual image path
+    title: "Structuring Machine Learning Projects",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my knowledge in structuring and strategizing machine learning projects effectively.",
+    imageSrc: '/certifications/Coursera WK5U8F7UR24H_page-0001.jpg', // Replace with the actual image path
     imageHeight: 1200,
-    projectLink: "https://www.coursera.org/account/accomplishments/specialization/WJ55943O2OCG", // <-- Add the link for Neosolutions
-    certificationsType: "/logo/stanford.avif", // Specify the certifications type (using participant as a placeholder for Top 5)
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/WK5U8F7UR24H", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
     techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
         '/techstack/gemini.svg',
     ],

@@ -41,15 +41,13 @@ const certificationsEntriesData = [
   },
   {
     entryNumber: "03",
-    title: "KachingKo",
-    award: "4th Place",
-    description: "Scan your receipts, unlock financial intelligence. This AI companion uses videos or images of receipts to categorize spending, analyze habits, guide your budget towards goals, and reward smart money decisions. KachingKo makes understanding your finances instant and engaging.",
-    imageSrc: '/solutions/kachingko.svg', // Replace with the actual image path
-    projectLink: "https://neosolve-hackit-kachingko.vercel.app/", // <-- Add the link for KachingKo
-    certificationsType: "third", // Specify the certifications type (using participant as a placeholder for 4th)
+    title: "Google Student Ambassador 2025",
+    award: "Google Indonesia",
+    description: "I graduated from this program after being selected from 12,000 students nationwide. This certificate recognizes my successful participation and exceptional leadership in driving the adoption of Google AI within my university community. During my tenure, I was also awarded special recognition badges, including Rising Star, Excellence, and On-Campus Event Host.",
+    imageSrc: '/certifications/Jofanza Denis Aldida_GSA_page-0001.jpg', // Replace with the actual image path
+    projectLink: "https://www.linkedin.com/in/jofanza-denis-aldida/", // <-- Add the link for KachingKo
+    certificationsType: "/logo/google.svg", // Specify the certifications type (using participant as a placeholder for 4th)
     techStackIcons: [ // <-- Add paths to tech stack icons for KachingKo
-        '/techstack/nextjs.svg',
-        '/techstack/tailwind.svg',
         '/techstack/gemini.svg',
     ],
   },

@@ -88,7 +88,7 @@ const projects = [
         '/techstack/flask.svg',
         '/techstack/fastapi.svg',
     ],
-    imageSrc: '/proj/projectFour.png',
+    imageSrc: '/proj/ocr.png',
     link: 'https://github.com/DenisKai7/model-ocr-id-extract/blob/main/1.ipynb',
   },
   {

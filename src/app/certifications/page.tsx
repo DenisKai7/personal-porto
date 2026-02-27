@@ -17,14 +17,13 @@ const handleAnimationComplete = () => {
 const certificationsEntriesData = [
   {
     entryNumber: "01",
-    title: "Procrash",
-    award: "3rd Place",
-    description: "Designed for procrastinators and anyone striving for self-improvement, this gamified app transforms productivity into an adventure. By setting ultimate goals, breaking them into small missions, and battling monsters with each completed task, users can build better habits one level at a time.",
-    imageSrc: '/solutions/procrash.svg', // Replace with the actual image path
-    projectLink: "https://procrash-hdps5h.flutterflow.app/?fbclid=IwZXh0bgNhZW0CMTEAAR6V1DkZeKy8dZetXVGOk7A33bbXy5Ue001oiPqO8CxLwXM40uhn5cdDCW9RUQ_aem_cvDKSgLmGXTzEsuIRtzhrw", // <-- Add the link for Procrash
-    certificationsType: "first", // Specify the certifications type
+    title: "IC3 GS6 LEVEL 1",
+    award: "Certiport",
+    description: "Issued by Certiport, this globally recognized certification demonstrates a comprehensive understanding of essential digital skills. It highlights my proficiency in technology basics, digital citizenship, secure communication, collaboration, and information management.",
+    imageSrc: '/certifications/Certiport.jpg', // Replace with the actual image path
+    projectLink: "https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=447&cvid=oAo4EAnM9lEPzAy8symkqw==", // <-- Add the link for Procrash
+    certificationsType: "/logo/Certiport_Logo.jpg", // Specify the certifications type
     techStackIcons: [ // <-- Add paths to tech stack icons for Procrash
-        '/techstack/flutterflow.svg',
         '/techstack/gemini.svg',
     ],
   },
@@ -118,8 +117,8 @@ export default function Certifications() {
           {/* Falling Text for Desktop */}
           <div className="hidden md:block">
             <FallingText
-              text={` Besides being a developer and content creator, I am big on joining competitions, like hackathons. It is a great way to work on solving actual problems and meet interesting people. Here are some of the events I've participated in:`}
-              highlightWords={["hackathons", "competitions", "problems", "interesting", "events"]}
+              text={` Besides being a developer and speaker , I am highly committed to continuous learning and validating my technical skills through professional certifications. It is a great way to deepen my expertise in Artificial Intelligence, Machine Learning, and software engineering, ensuring I can build reliable and innovative solutions. Here are some of the certifications I've earned:`}
+              highlightWords={["developer", "speaker", "continuous", "learning", "professional", "certifications", "Artificial", "Intelligence", "Machine", "Learning", "software", "engineering"]}
               trigger="hover"
               backgroundColor="transparent"
               wireframes={false}
@@ -133,8 +132,8 @@ export default function Certifications() {
           {/* Adjusted margin bottom */}
           <div className="md:hidden mb-10"> {/* Changed mb-25 to mb-10 for smaller mobile margin */}
             <FallingText
-              text={` Besides being a developer and content creator, I am big on joining competitions, like hackathons. It is a great way to work on solving actual problems and meet interesting people. Here are some of the events I've participated in:`}
-              highlightWords={["hackathons", "competitions", "problems", "interesting", "events"]}
+              text={` Besides being a developer and speaker , I am highly committed to continuous learning and validating my technical skills through professional certifications. It is a great way to deepen my expertise in Artificial Intelligence, Machine Learning, and software engineering, ensuring I can build reliable and innovative solutions. Here are some of the certifications I've earned:`}
+              highlightWords={["developer", "speaker", "continuous", "learning", "professional", "certifications", "Artificial", "Intelligence", "Machine", "Learning", "software", "engineering"]}
               trigger="hover"
               backgroundColor="transparent"
               wireframes={false}

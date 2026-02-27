@@ -19,7 +19,7 @@ const IMGS: string[] = [
     "/certifications/[Bangkit 2024 Batch 2] Certificate - M463B4KY2079_page-0001.jpg",
     "/certifications/Coursera L33S7FDEQS8Y_page-0001.jpg",
     "/certifications/Jofanza Denis Aldida_GSA_page-0001.jpg",
-    "/certifications/asdos pbo 1.jpg",
+    "/certifications/scopus.jpg",
 ];
 
 interface RollingGalleryProps {

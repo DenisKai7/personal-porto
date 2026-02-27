@@ -10,7 +10,11 @@ interface CertificationsEntryProps {
   description: string;
   imageSrc?: string; // Optional project image source
   projectLink?: string; // Optional link for the project image
-  certificationsType: 'first' | 'second' | 'third' | 'fourth' | 'fifth' | 'sixth' | 'seventh' | 'eighth' | 'tenth' | string;
+  /**
+   * Either a key that maps to a predefined certification icon or
+   * the direct URL/path of an image to show alongside the award text.
+   */
+  certificationsType?: string;
   techStackIcons?: string[]; // Optional array of paths to tech stack icons
 }
 
@@ -21,7 +25,7 @@ const certificationsImagePaths: Record<string, string> = {
   third: '/certifications/bronze_trophy.png', 
   fourth: '/certifications/special_trophy.png', 
   fifth: '/certifications/participant_trophy.png', 
-  sixth: '/certifications/asdos pbo 1.jpg',
+  sixth: '/certifications/scopus.jpg',
   seventh: '/certifications/Sertifikat Asdos Genap 2023-2024_3 Jofanza Denis Aldida_page-0001.jpg',
   eighth: '/certifications/Sertifikat Asdos Genap 2023-2024_2 Jofanza Denis Aldida_page-0001.jpg',
   tenth: '/certifications/Asdos Algoritma Pemrograman 1.jpeg',
@@ -38,8 +42,12 @@ const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
   certificationsType,
   techStackIcons, // Destructure techStackIcons
 }) => {
-  // Get the correct image path based on certificationsType from the mapping
-  const certificationsImagePath = certificationsImagePaths[certificationsType];
+  // Resolve the correct image path.  `certificationsType` may be
+  // a key in our lookup map or a literal path/URL supplied by the caller.
+  let certificationsImagePath: string | undefined;
+  if (certificationsType) {
+    certificationsImagePath = certificationsImagePaths[certificationsType] || certificationsType;
+  }
 
   return (
     // Main container: flex-col on mobile, flex-row on medium screens and up

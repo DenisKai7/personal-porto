@@ -29,15 +29,14 @@ const certificationsEntriesData = [
   },
   {
     entryNumber: "02",
-    title: "Talento",
-    award: "Special Award",
-    description: "Talento is a mobile app designed to help you visually showcase your talents and skills through videos and images. It's like a \"Tinder for jobs,\" allowing you to immediately grab the attention of HR professionals with your abilities, making your application unmissable.",
-    imageSrc: '/solutions/talento.svg', // Replace with the actual image path
+    title: "Certificate of Presenter",
+    award: "Scopus Indonesia Conference 2025",
+    description: "Awarded for contributing as a presenter at the International Conference on Emerging Trends in AI and Computational Technologies in November 2025. This reflects my active engagement with academic research and the global AI community.",
+    imageSrc: '/certifications/scopus.jpg', // Replace with the actual image path
     projectLink: "https://talento-xi.vercel.app/", // <-- Add the link for Talento
-    certificationsType: "second", // Specify the certifications type
+    certificationsType: "/logo/Scopus_logo.png", // Specify the certifications type
     techStackIcons: [ // <-- Add paths to tech stack icons for Talento
-        '/techstack/javascript.svg',
-        '/techstack/css.svg',
+        '/techstack/gemini.svg',
     ],
   },
   {

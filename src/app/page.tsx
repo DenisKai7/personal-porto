@@ -116,14 +116,21 @@ const projects = [
   {
     id: 6,
     number: '06',
-    title: 'PLM Enrolment System',
-    description: 'Database Administrator and Developer',
+    title: 'CMMS Work Order System for Manufacturing Company',
+    description: 'Fullstack Developer',
     techstack: [
-        '/techstack/java.svg',
-        '/techstack/apachederby.svg',
+        '/techstack/nextjs.svg',
+        '/techstack/react.svg',
+        '/techstack/css.svg',
+        'techstack/express.svg',
+        '/techstack/nodejs.svg',
+        '/techstack/knex.svg',
+        '/techstack/mysql.svg',
+        '/techstack/docker.png',
+        '/techstack/minio.svg',
     ],
-    imageSrc: '/proj/projectSix.png',
-    link: 'https://github.com/Yuyuhiei/PLM-Regulars-Enrolment-System',
+    imageSrc: '/proj/wo.png',
+    link: 'https://github.com/DenisKai7/cmms-work-order-fe',
   },
 ];
 

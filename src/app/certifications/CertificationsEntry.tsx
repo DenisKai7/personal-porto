@@ -15,6 +15,8 @@ interface CertificationsEntryProps {
    * the direct URL/path of an image to show alongside the award text.
    */
   certificationsType?: string;
+  imageWidth?: number; // optional width to pass to next/image
+  imageHeight?: number; // optional height to pass to next/image
   techStackIcons?: string[]; // Optional array of paths to tech stack icons
 }
 
@@ -40,6 +42,8 @@ const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
   imageSrc,
   projectLink, // Destructure projectLink
   certificationsType,
+  imageWidth,
+  imageHeight,
   techStackIcons, // Destructure techStackIcons
 }) => {
   // Resolve the correct image path.  `certificationsType` may be
@@ -66,7 +70,7 @@ const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
         {/* Image Placeholder for the Project Image - Displays the project image or a placeholder */}
         {/* Adjusted width for different breakpoints */}
         {/* Adjusted margin for different breakpoints */}
-        <div className="w-full md:w-1/3 aspect-video flex items-center justify-center rounded-lg overflow-hidden mb-6 md:mb-0 md:mr-8 flex-shrink-0"> {/* Added bg-gray-800 back for placeholder */}
+        <div className="w-full md:w-1/3 flex items-center justify-center rounded-lg mb-6 md:mb-0 md:mr-8 flex-shrink-0"> {/* Removed fixed aspect ratio so tall cert images aren't cropped */}
           {imageSrc ? (
             // Render the project image using object-contain to prevent cropping
             // Wrap image in Link if projectLink is provided
@@ -75,18 +79,20 @@ const CertificationsEntry: React.FC<CertificationsEntryProps> = ({
                 <Image
                   src={imageSrc}
                   alt={`Project for ${title}`}
-                  className="object-contain w-full rounded-sm" // w-full h-full makes it responsive within its container
-                  width={200} // Add appropriate width and height for Image component
-                  height={300}
+                  className="object-contain rounded-sm"
+                  style={{ maxHeight: `${imageHeight ?? 800}px`, width: 'auto' }}
+                  width={imageWidth ?? 500}
+                  height={imageHeight ?? 800}
                 />
               </Link>
             ) : (
               <Image
                 src={imageSrc}
                 alt={`Project for ${title}`}
-                className="object-contain w-full h-full rounded-sm" // w-full h-full makes it responsive within its container
-                width={500} // Add appropriate width and height for Image component
-                height={300}
+                className="object-contain rounded-sm"
+                style={{ maxHeight: `${imageHeight ?? 800}px`, width: 'auto' }}
+                width={imageWidth ?? 500}
+                height={imageHeight ?? 800}
               />
             )
           ) : (

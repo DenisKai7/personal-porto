@@ -84,7 +84,7 @@ const projects = [
         '/techstack/opencv.svg',
         '/techstack/tensorflow.svg',
         '/techstack/YOLO.svg',
-        '/techstack/tesseract.png',
+        '/techstack/tesseract1.png',
         '/techstack/flask.svg',
         '/techstack/fastapi.svg',
     ],

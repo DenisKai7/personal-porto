@@ -77,12 +77,12 @@ const certificationsEntriesData = [
   },
   {
     entryNumber: "06",
-    title: "Using Python to Interact with the Operating System",
-    award: "Google",
-    description: "A CRM powered by Generative AI that transforms customer service by automatically detecting and processing conversations using NLP. It streamlines interactions, providing one-click access to relevant documentation and replies. Plus, it offers automated Kanban tracking for tickets and simulates AI resolution for low-level concerns.",
-    imageSrc: '/certifications/Coursera ZUHKBCL4MYYH_page-0001.jpg', // Replace with the actual image path
-    projectLink: "https://www.coursera.org/account/accomplishments/verify/ZUHKBCL4MYYH", // <-- Add the link for Neosolutions
-    certificationsType: "/logo/google.svg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    title: "Machine Learning",
+    award: "Stanford University",
+    description: "Successfully completed a comprehensive 3-course specialization taught by Andrew Ng. This certification validates my practical skills in applying modern machine learning concepts, including supervised and unsupervised learning, to solve real-world problems.",
+    imageSrc: '/certifications/Coursera WJ55943O2OCG_page-0001.jpg', // Replace with the actual image path
+    projectLink: "https://www.coursera.org/account/accomplishments/specialization/WJ55943O2OCG", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/stanford.avif", // Specify the certifications type (using participant as a placeholder for Top 5)
     techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
         '/techstack/gemini.svg',
     ],

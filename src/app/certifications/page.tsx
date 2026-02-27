@@ -53,28 +53,37 @@ const certificationsEntriesData = [
   },
   {
     entryNumber: "04",
-    title: "eCarga",
-    award: "Finalist - 1st Place Mock Pitch",
-    description: "A mobile app for booking specialized, accessible vehicles, created to cater to individuals with mobility disabilities. It serves as a direct link, connecting users in need of adapted transport (like wheelchair users) with suitable vehicles, providing convenient pickup service rather than requiring travel to a terminal.",
-    imageSrc: '/solutions/ecarga.svg', // Replace with the actual image path
-    projectLink: "https://github.com/Feinpoint/eCarga", // <-- Add the link for eCarga
-    certificationsType: "fourth", // Specify the certifications type
+    title: "Crash Course on Python",
+    award: "Google",
+    description: "Successfully completed an online non-credit course authorized by Google and offered through Coursera. This certificate demonstrates my foundational knowledge and practical skills in Python programming.",
+    imageSrc: '/certifications/Coursera P724RBL6SNE4_page-0001.jpg', // Replace with the actual image path
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/P724RBL6SNE4", // <-- Add the link for eCarga
+    certificationsType: "/logo/google.svg", // Specify the certifications type
      techStackIcons: [ // <-- Add paths to tech stack icons for eCarga
-        '/techstack/flutter.svg',
-        '/techstack/gcp.svg',
-     ],
+        '/techstack/gemini.svg',
+    ],
   },
   {
     entryNumber: "05",
-    title: "Neosolutions",
-    award: "Top 5 Finalist",
-    description: "A CRM powered by Generative AI that transforms customer service by automatically detecting and processing conversations using NLP. It streamlines interactions, providing one-click access to relevant documentation and replies. Plus, it offers automated Kanban tracking for tickets and simulates AI resolution for low-level concerns.",
-    imageSrc: '/solutions/neosolutions.svg', // Replace with the actual image path
-    projectLink: "https://neosolutions-tenext-ai.vercel.app/", // <-- Add the link for Neosolutions
-    certificationsType: "fifth", // Specify the certifications type (using participant as a placeholder for Top 5)
+    title: "Using Python to Interact with the Operating System",
+    award: "Google",
+    description: "Successfully completed an online non-credit course authorized by Google and offered through Coursera. This certificate validates my ability to use Python for interacting directly with the operating system.",
+    imageSrc: '/certifications/Coursera ZUHKBCL4MYYH_page-0001.jpg', // Replace with the actual image path
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/ZUHKBCL4MYYH", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/google.svg", // Specify the certifications type (using participant as a placeholder for Top 5)
     techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
-        '/techstack/nextjs.svg',
-        '/techstack/tailwind.svg',
+        '/techstack/gemini.svg',
+    ],
+  },
+  {
+    entryNumber: "06",
+    title: "Using Python to Interact with the Operating System",
+    award: "Google",
+    description: "A CRM powered by Generative AI that transforms customer service by automatically detecting and processing conversations using NLP. It streamlines interactions, providing one-click access to relevant documentation and replies. Plus, it offers automated Kanban tracking for tickets and simulates AI resolution for low-level concerns.",
+    imageSrc: '/certifications/Coursera ZUHKBCL4MYYH_page-0001.jpg', // Replace with the actual image path
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/ZUHKBCL4MYYH", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/google.svg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
         '/techstack/gemini.svg',
     ],
   }

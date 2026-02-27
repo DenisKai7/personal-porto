@@ -24,17 +24,17 @@ const projects = [
   {
     id: 1,
     number: '01',
-    title: 'Haliya: The AI Fortune Teller',
-    description: 'Web Developer',
-    techstack: [ // <-- Add paths to tech stack icons for Procrash
-        '/techstack/react.svg',
-        '/techstack/css.svg',
-        '/techstack/rasa.svg',
-        '/techstack/openai.svg',
+    title: 'GroUp! : Aplikasi Mobile Penanganan dan Pencegahan Stunting',
+    description: 'AI & Software Engineer',
+    techstack: [ 
+        '/techstack/kotlin.svg',
+        '/techstack/xml.svg',
+        '/techstack/nodejs.svg',
+        '/techstack/express.svg',
         '/techstack/python.svg',
     ],
-    imageSrc: '/proj/projectOne.png', 
-    link: 'https://github.com/Yuyuhiei/Haliya-The-AI-Fortune-Teller',
+    imageSrc: '/proj/Group.jpeg', 
+    link: 'https://github.com/DenisKai7/GroUp',
   },
   {
     id: 2,

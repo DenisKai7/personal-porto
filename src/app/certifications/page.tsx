@@ -151,9 +151,9 @@ export default function Certifications() {
         <RollingGallery autoplay={true} pauseOnHover={false} />
 
         {/* Adjusted padding for responsiveness */}
-        <div className="flex flex-col w-full max-w-5xl mx-auto p-4 md:p-4 my-10 md:my-20"> {/* Changed p-15 to p-4 */}
+        <div className="flex flex-col w-full max-w-5xl mx-auto p-4 md:p-4 mt-2 md:mt-5 md:mb-64"> {/* Increased margin bottom significantly */}
           {/* Falling Text for Desktop */}
-          <div className="hidden md:block">
+          <div className="hidden md:block pb-16">
             <FallingText
               text={` Besides being a developer and speaker , I am highly committed to continuous learning and validating my technical skills through professional certifications. It is a great way to deepen my expertise in Artificial Intelligence, Machine Learning, and software engineering, ensuring I can build reliable and innovative solutions. Here are some of the certifications I've earned:`}
               highlightWords={["developer", "speaker", "continuous", "learning", "professional", "certifications", "Artificial", "Intelligence", "Machine", "Learning", "software", "engineering"]}

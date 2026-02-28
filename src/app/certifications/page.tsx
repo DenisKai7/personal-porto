@@ -35,7 +35,7 @@ const certificationsEntriesData = [
     description: "Awarded for contributing as a presenter at the International Conference on Emerging Trends in AI and Computational Technologies in November 2025. This reflects my active engagement with academic research and the global AI community.",
     imageSrc: '/certifications/scopus.jpg', // Replace with the actual image path
     imageHeight: 1200,
-    projectLink: "https://talento-xi.vercel.app/", // <-- Add the link for Talento
+    projectLink: "https://iconest.info/", // <-- Add the link for Talento
     certificationsType: "/logo/Scopus_logo.png", // Specify the certifications type
     techStackIcons: [ // <-- Add paths to tech stack icons for Talento
         '/techstack/gemini.svg',

@@ -106,6 +106,19 @@ const certificationsEntriesData = [
         '/techstack/gemini.svg',
     ],
   },
+  {
+    entryNumber: "08",
+    title: "DeepLearning.AI TensorFlow Developer",
+    award: "DeepLearning.AI",
+    description: "Successfully completed a comprehensive 4-course Professional Certificate program. This certification validates my ability to build and train neural networks using TensorFlow, covering applications in computer vision, natural language processing, and time series prediction.",
+    imageSrc: '/certifications/Coursera L33S7FDEQS8Y_page-0001 (1).jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/specialization/L33S7FDEQS8Y", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
 ];
 
 export default function Certifications() {

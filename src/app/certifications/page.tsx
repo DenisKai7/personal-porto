@@ -145,6 +145,71 @@ const certificationsEntriesData = [
         '/techstack/gemini.svg',
     ],
   },
+  {
+    entryNumber: "11",
+    title: "Data Pipelines with TensorFlow Data Services",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate validates my ability to build efficient and scalable data pipelines for machine learning models using TensorFlow Data Services.",
+    imageSrc: '/certifications/Coursera HNJUUZ8QDG2F_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/HNJUUZ8QDG2F", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
+  {
+    entryNumber: "12",
+    title: "Advanced Computer Vision with TensorFlow",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing advanced computer vision models using TensorFlow.",
+    imageSrc: '/certifications/Coursera 4NJV2V5DOBOW_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/4NJV2V5DOBOW", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
+  {
+    entryNumber: "13",
+    title: "Natural Language Processing with Probabilistic Models",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing natural language processing models using probabilistic approaches.",
+    imageSrc: '/certifications/Coursera OOHQM9N40Y4N_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/OOHQM9N40Y4N", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
+  {
+    entryNumber: "14",
+    title: "Natural Language Processing with Classification and Vector Spaces",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing natural language processing models using classification and vector space techniques.",
+    imageSrc: '/certifications/Coursera FKE4YO781X8J_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/FKE4YO781X8J", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
+  {
+    entryNumber: "15",
+    title: "Natural Language Processing with Sequence Models",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing natural language processing models using sequence models.",
+    imageSrc: '/certifications/Coursera YSMKFZYNOX0U_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/YSMKFZYNOX0U", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
 ];
 
 export default function Certifications() {

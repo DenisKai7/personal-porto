@@ -123,7 +123,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
     };
 
     return (
-        <div className="relative h-[275px] md:h-[450px] w-full overflow-hidden">
+        <div className="relative h-[350px] md:h-[800px] w-full overflow-hidden">
             <div
                 className="absolute top-0 left-0 h-full w-[48px] z-10"
                 style={{
@@ -168,15 +168,16 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
                                     transform: itemTransform,
                                 }}
                             >
-                                <Image
-                                    width={300} // Added width for Image component
-                                    height={300} // Added height for Image component
-                                    unoptimized
-                                    priority
-                                    src={url}
-                                    alt="gallery"
-                                    className="pointer-events-none rounded-[15px] border-[3px] border-white object-cover transition-transform duration-300 ease-out group-hover:scale-105 w-[200px] h-[190px] md:h-[270px] md:w-[310px]" // <-- Increased height here
-                                />
+                                    <Image
+                                        width={800}
+                                        height={1200}
+                                        unoptimized
+                                        priority
+                                        src={url}
+                                        alt="gallery"
+                                        className="pointer-events-none rounded-[15px] border-[3px] border-white object-contain transition-transform duration-300 ease-out group-hover:scale-105"
+                                        style={{ maxHeight: '85%', width: 'auto' }}
+                                    />
                             </div>
                         );
                      })}

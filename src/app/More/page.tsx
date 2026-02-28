@@ -25,12 +25,15 @@ const MoreInfo = {
 export default function More() {
   // Dokumentasi kegiatan pribadi
   const activityImages = [
-    "/activity/activity1.jpg",
-    "/activity/activity2.jpg",
-    "/activity/activity3.jpg",
-    "/activity/activity4.jpg",
-    "/activity/activity5.jpg",
-  ];
+  "/activity/Rekap.png?w=300&h=200", // Tambahkan parameter resize
+  "/activity/pend bio.png?w=300&h=200",
+  "/activity/pemateri.JPG?w=300&h=200",
+  "/activity/gsa opening.jpeg?w=300&h=200",
+  "/activity/kkn.jpeg?w=300&h=200",
+  "/activity/KP.jpeg?w=300&h=200",
+  "/activity/present scopus.jpeg?w=300&h=200",
+  "/activity/present.jpeg?w=300&h=200"
+];
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -47,7 +50,7 @@ export default function More() {
       </div>
 
       {/* More Content Container */}
-      <div className="w-full max-w-md md:max-w-3xl lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="w-full max-w-md md:max-w-5xl lg:max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
         {/* More Information Section */}
         <div className="flex flex-col space-y-6">
@@ -103,7 +106,19 @@ export default function More() {
         {/* Documentation Gallery Section */}
         <div>
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">Activity Documentation</h2>
-          <RollingGallery images={activityImages} autoplay={true} pauseOnHover={true} />
+          <div className="relative w-full h-[250px] md:h-[300px] lg:h-[350px] overflow-hidden rounded-lg">
+            <RollingGallery
+              images={activityImages}
+              autoplay={true}
+              pauseOnHover={true}
+              containerHeight="100%" 
+              imageMaxHeight="200px" // Ukuran gambar lebih kecil
+            />
+          </div>
+          {/* Optional caption to indicate smaller images */}
+          <p className="text-sm text-white/60 text-center mt-3 italic">
+            *Klik dan hover untuk melihat detail
+          </p>
         </div>
 
       </div>

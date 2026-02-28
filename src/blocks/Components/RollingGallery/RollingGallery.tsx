@@ -26,12 +26,23 @@ interface RollingGalleryProps {
     autoplay?: boolean;
     pauseOnHover?: boolean;
     images?: string[];
+    /**
+     * CSS height for the container (eg '450px' or '50vh').
+     * Defaults are defined inline when rendering.
+     */
+    containerHeight?: string;
+    /**
+     * maximum height to give each image inside carousel. Defaults to 85%.
+     */
+    imageMaxHeight?: string;
 }
 
 const RollingGallery: React.FC<RollingGalleryProps> = ({
     autoplay = false,
     pauseOnHover = false,
     images = [],
+    containerHeight,
+    imageMaxHeight,
 }) => {
     // Use default images if none are provided
     const galleryImages = images.length > 0 ? images : IMGS;
@@ -123,7 +134,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
     };
 
     return (
-        <div className="relative h-[350px] md:h-[800px] w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden" style={{height: containerHeight || (isScreenSizeSm ? '275px' : '450px')}}>
             <div
                 className="absolute top-0 left-0 h-full w-[48px] z-10"
                 style={{
@@ -176,7 +187,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
                                         src={url}
                                         alt="gallery"
                                         className="pointer-events-none rounded-[15px] border-[3px] border-white object-contain transition-transform duration-300 ease-out group-hover:scale-105"
-                                        style={{ maxHeight: '85%', width: 'auto' }}
+                                        style={{ maxHeight: imageMaxHeight || '85%', width: 'auto' }}
                                     />
                             </div>
                         );

@@ -119,6 +119,32 @@ const certificationsEntriesData = [
         '/techstack/gemini.svg',
     ],
   },
+  {
+    entryNumber: "09",
+    title: "Browser-based Models with TensorFlow.js",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing machine learning models directly in the browser using TensorFlow.js.",
+    imageSrc: '/certifications/Coursera 4HQWHLQLLGIX_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/4HQWHLQLLGIX", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
+  {
+    entryNumber: "10",
+    title: "Device-based Models with TensorFlow Lite",
+    award: "DeepLearning.AI",
+    description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing machine learning models on edge devices using TensorFlow Lite.",
+    imageSrc: '/certifications/Coursera 4C3XOQY8OHQG_page-0001.jpg', // Replace with the actual image path
+    imageHeight: 1200,
+    projectLink: "https://www.coursera.org/account/accomplishments/verify/4C3XOQY8OHQG", // <-- Add the link for Neosolutions
+    certificationsType: "/logo/DLai.jpg", // Specify the certifications type (using participant as a placeholder for Top 5)
+    techStackIcons: [ // <-- Add paths to tech stack icons for Neosolutions
+        '/techstack/gemini.svg',
+    ],
+  },
 ];
 
 export default function Certifications() {

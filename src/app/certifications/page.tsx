@@ -68,7 +68,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "04",
+    entryNumber: "05",
     title: "Crash Course on Python",
     award: "Google",
     description: "Successfully completed an online non-credit course authorized by Google and offered through Coursera. This certificate demonstrates my foundational knowledge and practical skills in Python programming.",
@@ -81,7 +81,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "05",
+    entryNumber: "06",
     title: "Using Python to Interact with the Operating System",
     award: "Google",
     description: "Successfully completed an online non-credit course authorized by Google and offered through Coursera. This certificate validates my ability to use Python for interacting directly with the operating system.",
@@ -94,7 +94,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "06",
+    entryNumber: "07",
     title: "Machine Learning",
     award: "Stanford University",
     description: "Successfully completed a comprehensive 3-course specialization taught by Andrew Ng. This certification validates my practical skills in applying modern machine learning concepts, including supervised and unsupervised learning, to solve real-world problems.",
@@ -107,7 +107,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "07",
+    entryNumber: "08",
     title: "Structuring Machine Learning Projects",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my knowledge in structuring and strategizing machine learning projects effectively.",
@@ -120,7 +120,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "08",
+    entryNumber: "09",
     title: "DeepLearning.AI TensorFlow Developer",
     award: "DeepLearning.AI",
     description: "Successfully completed a comprehensive 4-course Professional Certificate program. This certification validates my ability to build and train neural networks using TensorFlow, covering applications in computer vision, natural language processing, and time series prediction.",
@@ -133,7 +133,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "09",
+    entryNumber: "10",
     title: "Browser-based Models with TensorFlow.js",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing machine learning models directly in the browser using TensorFlow.js.",
@@ -146,7 +146,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "10",
+    entryNumber: "11",
     title: "Device-based Models with TensorFlow Lite",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing machine learning models on edge devices using TensorFlow Lite.",
@@ -159,7 +159,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "11",
+    entryNumber: "12",
     title: "Data Pipelines with TensorFlow Data Services",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate validates my ability to build efficient and scalable data pipelines for machine learning models using TensorFlow Data Services.",
@@ -172,7 +172,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "12",
+    entryNumber: "13",
     title: "Advanced Computer Vision with TensorFlow",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing advanced computer vision models using TensorFlow.",
@@ -185,7 +185,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "13",
+    entryNumber: "14",
     title: "Natural Language Processing with Probabilistic Models",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing natural language processing models using probabilistic approaches.",
@@ -198,7 +198,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "14",
+    entryNumber: "15",
     title: "Natural Language Processing with Classification and Vector Spaces",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing natural language processing models using classification and vector space techniques.",
@@ -211,7 +211,7 @@ const certificationsEntriesData = [
     ],
   },
   {
-    entryNumber: "15",
+    entryNumber: "16",
     title: "Natural Language Processing with Sequence Models",
     award: "DeepLearning.AI",
     description: "Successfully completed an online non-credit course authorized by DeepLearning.AI and offered through Coursera. This certificate demonstrates my successful completion of training focused on implementing natural language processing models using sequence models.",

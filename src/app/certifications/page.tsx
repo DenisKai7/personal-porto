@@ -58,7 +58,7 @@ const certificationsEntriesData = [
     entryNumber: "04",
     title: "Machine Learning Graduate",
     award: "Bangkit Academy 2024",
-    description: "I graduated from this program after being selected from 12,000 students nationwide. This certificate recognizes my successful participation and exceptional leadership in driving the adoption of Google AI within my university community. During my tenure, I was also awarded special recognition badges, including Rising Star, Excellence, and On-Campus Event Host.",
+    description: "I graduated from Bangkit Academy 2024 Program. This certificate recognizes my successful participation, exceptional leadership, and implementation of machine learning concepts in driving the product development by final capstone project.",
     imageSrc: '/certifications/[Bangkit 2024 Batch 2] Certificate - M463B4KY2079_page-0001.jpg', // Replace with the actual image path
     imageHeight: 1200,
     projectLink: "https://www.linkedin.com/in/jofanza-denis-aldida/", // <-- Add the link for KachingKo
